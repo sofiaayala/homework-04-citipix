@@ -23,19 +23,19 @@ $(function(){
     event.preventDefault();
     var city = $("#cityType").val();
 
-    if (city === "New York" || "New York City" || "NYC") {
+    if (city === "New York" || city === "New York City" || city === "NYC") {
       console.log("Input was New York");
       $("body").attr("class", "nyc");
-    } else if (city === "San Francisco" || "SF" || "Bay Area") {
+    } else if (city === "San Francisco" || city === "SF" || city === "Bay Area") {
       // console.log("Input was San Fran");
       $("body").attr("class", "sf");
-    } else if (city === "Los Angeles" || "LA" || "LAX") {
+    } else if (city === "Los Angeles" || city === "LA" || city === "LAX") {
       // console.log("Input was Los Angeles");
       $("body").attr("class", "la");
-    } else if (city === "Austin" || "ATX") {
+    } else if (city === "Austin" || city === "ATX") {
       // console.log("Input was Austin");
       $("body").attr("class", "austin");
-    } else if (city === "Sydney"|| "SYD") {
+    } else if (city === "Sydney"|| city === "SYD") {
       // console.log("Input was Sydney");
       $("body").attr("class", "sydney");
     } else {
